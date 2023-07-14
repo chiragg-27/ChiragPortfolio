@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Chirag</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/77ef7ba1e4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/logo.png" alt="Chirag" class="logo"> -->
+                <a href="#header" class="logo-link"><h1 class="logo"> <span id="C">C</span>hirag</h1></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Developer</p>
+                <h1>Hi, I'm <span> Chirag <br>Gupta</span> from India</h1>
+            </div>
+        </div>
+    </div>
+
+<!-----------------------------------------------------------------about---------------------------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/me2.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Chirag Gupta and I live in Delhi, India. I am an aspiring developer pursuing my major in Electrical Engineering from Netaji Subhas University of Technology, Delhi. I am a dedicated and motivated individual with diverse skill set. In my previous experiences I have demonstrated my ability to lead and manage teams.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">PORs</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Data structures & Algorithms using C++. Experience of C, Python, Javascript & various others.</li>
+                            <li><span>Web Development</span><br>Web Application Development</li>
+                            <li><span>Graphic Designing</span><br>Designing using Adobe Photoshop, Adobe Illustrator</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech(Electrical Engineering)</span><br>Netaji Subhas University of Technology, Delhi(2020-2024)</li>
+                            <li><span>AISSCE</span><br>Ahlcon Public School, Delhi(2020)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Non-Tech Team Lead</span><br>Leading Non-Tech Team of Team Kalpana, Aerospace Society of NSUT, Delhi (120+ inmates) for year 
+                                2022-2023.</li>
+                            <li><span>Graphic Design Lead</span><br>Leading Graphic Team of Team Kalpana, Aerospace Society of NSUT, Delhi (120+ inmates) for year 
+                                2021-2022.</li>
+                            <!-- <li><span>Exp3</span><br>Lorem ipsum dolor sit amet</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!----------------------------------------------services--------------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code fa-bounce"></i>
+                    <h2>Web App Development</h2>
+                    <p>Crafting dynamic and responsive web applications that empower target audiences, streamline processes, and deliver
+                    seamless user experiences, while leveraging the latest technologies and industry best practices.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop fa-bounce"></i>
+                    <h2>Graphic Designing</h2>
+                    <p>Offering comprehensive graphic design services that bring ideas to life through visually captivating designs, elevating
+                    the aesthetic appeal and effectively communicating messages to target audiences.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <!-- <div>
+                    <i class="fa-brands fa-app-store fa-bounce"></i>
+                    <h2>Service 3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, eum doloribus.
+                    nostrum omnis sapiente id, quos, ad voluptatum </p>
+                    <a href="#">Learn More</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+<!---------------------------------------------portfolio--------------------------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" >
+                    <div class="layer">
+                        <h3>VR Battlegrounds</h3>
+                        <p>Developed a responsive and interactive full CRUD web application. The project aimed to provide users with a platform to
+                        discover VR game centers, upload virtual battlegrounds, edit previously uploaded, and access reviews & ratings. Notable
+                        features include geolocation integration, image upload functionality, secure authentication and authorization, and
+                        dynamic content rendering.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" >
+                    <div class="layer">
+                        <h3>Personal Portfolio</h3>
+                        <p>Designed and developed a visually appealing personal portfolio web application. The
+                        project aimed to showcase skills, experience, and projects effectively, providing a user-friendly and interactive
+                        experience. Key features included responsive design, project galleries, and a contact form for inquiries.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- <div class="work">
+                    <img src="images/work-3.png" >
+                    <div class="layer">
+                        <h3>Work 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugit 
+                        ne iste provident, debitis eos earum eum. Odio, reiciendis.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div> -->
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+<!------------------------------------------------------------contact----------------------------------------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>chirag.gupta2702@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 72899 30325</p>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form >
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button class="btn btn2" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="script.js"></script>
+    
+</body>
+</html>
